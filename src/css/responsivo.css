@@ -1,0 +1,43 @@
+@media (max-width: 730px) {
+    :root {
+        --cor-principal: #334257;
+        --cor-secundaria: #476072;
+        --cor-terciaria: #548CA8;
+        --cor-branca: #EEEEEE;
+    }
+    
+    .nav-bar {
+        padding: 15px 40px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .icone-menu-mobile{
+        display: block flex;
+        align-items: center;
+    }
+
+    .icone-menu-mobile p {
+        font-size: 3rem;
+        cursor: pointer;
+        color: var(--cor-branca);
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .menu-mobile .nav-item {
+        display: block;
+        padding-top: 12px;
+    }
+
+    .abrir {
+        display: block;
+    }
+}

@@ -1,0 +1,62 @@
+:root {
+    --cor-principal: #334257;
+    --cor-secundaria: #476072;
+    --cor-terciaria: #548CA8;
+    --cor-branca: #EEEEEE;
+}
+
+header {
+    background-color: var(--cor-principal);
+    box-shadow: 0px 3px 10px var(--cor-secundaria);
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo h2 {
+    font-size: 3rem;
+    color: var(--cor-branca);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 45px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0px 15px;
+}
+
+.nav-link {
+    font-size: 2rem;
+    color: var(--cor-branca);
+    font-weight: 400;
+}
+
+.icone-menu-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
