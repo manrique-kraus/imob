@@ -1,14 +1,10 @@
 function aparecerMenu() {
     const menuMobile = document.querySelector('.menu-mobile');
-    let possuiClasseAbrir = menuMobile.classList.contains("abrir");
+    let botaoAbrir = document.querySelector(".icone-menu-mobile");
+    let botaoFechar = document.querySelector(".icone-fechar-mobile");
 
-    if (possuiClasseAbrir) {
-        menuMobile.classList.remove("abrir")
-    } else {
-        menuMobile.classList.add("abrir")
-    }
+    menuMobile.classList.toggle("abrir")
+    botaoAbrir.classList.toggle("esconder")
+    botaoFechar.classList.toggle("mostrar")
 }
-
-//ver se a aba que abre do menu nao vai atrapalhar restante pagina
-//colocar icone de X para fechar
-//colocar transiçoes e hovers
+ // colocar transition no menu q aparece

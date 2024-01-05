@@ -18,6 +18,11 @@ header {
 .logo h2 {
     font-size: 3rem;
     color: var(--cor-branca);
+    transition: 0.4s ease-in-out;
+}
+
+.logo h2:hover {
+    color: var(--cor-terciaria);
 }
 
 .logo {
@@ -42,6 +47,15 @@ header {
     justify-content: center;
 }
 
+.nav-list ul li {
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-list ul li:hover {
+    background-color: var(--cor-terciaria);
+}
+
 .nav-item {
     margin: 0px 15px;
 }
@@ -52,11 +66,12 @@ header {
     font-weight: 400;
 }
 
-.icone-menu-mobile {
+.icones {
     display: none;
 }
 
 .menu-mobile {
     display: none;
 }
+
 
