@@ -68,4 +68,34 @@
         transform: rotate(180deg);
     } 
 
+    .container-busca {
+        height: 290px;
+    }
+
+    .container-busca .busca {
+        height: 285px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-busca .busca .opcoes-busca {
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+
+    .container-busca .botao-buscar {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .container-busca .busca .opcoes-busca select {
+        width: 150px;
+        margin-left: 20px;
+        font-size: 1.7rem;
+    }
+
+    .container-busca .busca .opcoes-busca option {
+        font-size: 1rem;
+    }
+
 }

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./src/css/estilos.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -69,6 +71,41 @@
             </ul>
         </div>
     </header>
+
+    <div class="container-busca">
+        <div class="busca">
+            <h2 class="titulo-busca">Encontre seu futuro imóvel</h2>
+            <div class="opcoes-busca">
+                <select name="modalidade" id="modalidade">
+                    <option value="" disabled selected hidden>Modalidade</option>
+                    <option value="venda">Venda</option>
+                    <option value="aluguel">Aluguel</option>
+                    <option value="aluguel-e-venda">Ambos</option>
+                </select>
+
+                <select name="categoria" id="categoria">
+                    <option value="" disabled selected hidden>Categoria</option>
+                    <option value="casa">Casa</option>
+                    <option value="sobrado">Sobrado</option>
+                    <option value="terreno">Terreno</option>
+                    <option value="comercial">Comercial</option>
+                </select>
+
+                <select name="bairro" id="bairro">
+                    <option value="" disabled selected hidden>Bairro</option>
+                    <option value="vila-carli">Vila Carli</option>
+                    <option value="vila-bela">Vila Bela</option>
+                    <option value="centro">Centro</option>
+                </select>
+
+                <div class="botao-buscar">
+                    <button id="buscarImovel">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/2f44bb86e9.js" crossorigin="anonymous"></script>
     <script src="./src/js/index.js"></script>

@@ -7,7 +7,8 @@
 
 header {
     background-color: var(--cor-principal);
-    box-shadow: 0px 3px 10px var(--cor-secundaria);
+    /* box-shadow: 0px 3px 10px var(--cor-secundaria); */
+    border-bottom: #EEEEEE;
 }
 
 .logo img {
@@ -74,4 +75,67 @@ header {
     display: none;
 }
 
+
+.container-busca {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    height: 152px;
+}
+
+.container-busca .busca {
+    background-color:#FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.5);
+    width: 85vw;
+    height: 150px;
+    padding: 20px 70px;
+}
+
+.container-busca .busca h2 {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.container-busca .busca .opcoes-busca {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.container-busca .busca .opcoes-busca select {
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 30px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.container-busca .botao-buscar {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.container-busca .botao-buscar button {
+    background-color:var(--cor-terciaria);
+    width: 50px;
+    height: 30px;
+    border: solid 0.5px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.container-busca .botao-buscar button:hover {
+    background-color:var(--cor-secundaria);
+}
+
+.container-busca .botao-buscar button:hover i {
+    color:var(--cor-branca);
+}
+
+.container-busca {
+    visibility: hidden;
+}
 
