@@ -74,7 +74,6 @@
 
     .container-busca .busca {
         height: 285px;
-        display: flex;
         flex-direction: column;
     }
 
@@ -90,7 +89,6 @@
 
     .container-busca .busca .opcoes-busca select {
         width: 150px;
-        margin-left: 20px;
         font-size: 1.7rem;
     }
 
