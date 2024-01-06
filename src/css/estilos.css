@@ -67,6 +67,10 @@ header {
     font-weight: 400;
 }
 
+.icones i {
+    color: #FFFFFF;
+}
+
 .icones {
     display: none;
 }
