@@ -1,6 +1,6 @@
 window.sr = ScrollReveal({ reset: true });
 
-ScrollReveal().reveal('.container-busca', {
+ScrollReveal().reveal('.container-busca, .imagem-principal, .titulo-imoveis, .container-imoveis, .botao-ver-todos', {
     origin: 'top',
     distance: '40px',
     duration: 2000,

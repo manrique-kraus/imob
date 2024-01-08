@@ -77,6 +77,10 @@
         flex-direction: column;
     }
 
+    .container-busca .busca .titulo-busca {
+        font-size: 2rem;
+    }
+
     .container-busca .busca .opcoes-busca {
         flex-direction: column;
         padding: 10px 10px;
@@ -87,9 +91,14 @@
         margin-top: 10px;
     }
 
+    .container-busca .botao-buscar button {
+        width: 100px;
+        height: 30px;
+    }
+
     .container-busca .busca .opcoes-busca select {
         width: 150px;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .container-busca .busca .opcoes-busca option {
