@@ -11,31 +11,31 @@ header {
     border-bottom: #EEEEEE;
 }
 
-.logo img {
-    width: 100px;
-    height: 100px;
+.nav-bar .logo {
+    width: 200px;
+    height: 130px;
 }
 
-.logo h2 {
+/* .logo h2 {
     font-size: 3rem;
     color: var(--cor-branca);
     transition: 0.4s ease-in-out;
-}
+} */
 
-.logo h2:hover {
+/* .logo h2:hover {
     color: var(--cor-terciaria);
-}
+} */
 
-.logo {
+/* .logo {
     display: flex;
     align-items: center;
     gap: 15px;
-}
+} */
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 45px;
+    padding: 10px 45px;
 }
 
 .nav-list {
@@ -187,48 +187,15 @@ main {
 .container-imoveis .caixa-imovel img {
     width: 100%
 }
-
-
-
-
-
-.container-imoveis .caixa-imovel-dois img {
-    width: 100%
-}
-
-
-
-
-
-
+    
 .container-imoveis .caixa-imovel {
     background-color: var(--cor-branca);
     width: 280px;
-    height: 350px;
+    height: 385px;
     transition: 0.4s ease-in-out;
     cursor: pointer;
     margin-bottom: 10px;
 }
-
-
-
-
-
-
-.container-imoveis .caixa-imovel-dois {
-    background-color: var(--cor-branca);
-    width: 280px;
-    height: 350px;
-    transition: 0.6s ease-in-out;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-
-
-
-
-
 
 .container-imoveis .caixa-imovel .valor,
 .container-imoveis .caixa-imovel .modalidade {
@@ -236,74 +203,29 @@ main {
     padding: 5px 10px;
 }
 
-
-
-
-
-
-.container-imoveis .caixa-imovel-dois .valor,
-.container-imoveis .caixa-imovel-dois .modalidade {
-    font-size: 2rem;
-    padding: 5px 10px;
-}
-
-
-
-
-
 .container-imoveis .caixa-imovel .localidade {
     font-size: 1.5rem;
     padding: 5px 10px;
 }
 
-
-
-
-.container-imoveis .caixa-imovel-dois .localidade {
-    font-size: 1.5rem;
-    padding: 5px 10px;
+.container-imoveis .caixa-imovel .container-infos {
+    display: flex;
+    justify-content: center;
 }
-
-
-
-
-
-
 
 .container-imoveis .caixa-imovel .infos {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 10px;
     font-size: 1.5rem;
+    width: 60%;
+    gap: 5px;
 }
-
-
-
-
-.container-imoveis .caixa-imovel-dois .infos {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    font-size: 1.5rem;
-}
-
-
-
-
 
 .container-imoveis .caixa-imovel:hover {
     transform: scale(1.05);
 }
-
-
-
-
-
-.container-imoveis .caixa-imovel-dois:hover {
-    border: solid 0.5px var(--cor-principal);
-}
-
-
 
 .botao-ver-todos button {
     margin-top: 20px;
@@ -320,6 +242,10 @@ main {
 
 .botao-ver-todos button:hover {
     background-color: #476072;
+}
+
+.meio {
+    text-align: center;
 }
 
 
