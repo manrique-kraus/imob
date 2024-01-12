@@ -87,6 +87,11 @@ header {
     height: 152px;
 }
 
+.container-busca .container-opcoes-de-busca {
+    display: flex;
+    justify-content: center;
+}
+
 .container-busca .busca {
     background-color:#FFFFFF;
     border-radius: 10px;
