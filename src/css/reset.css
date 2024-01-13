@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 * {
@@ -12,5 +13,3 @@ html {
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
 }
-
-

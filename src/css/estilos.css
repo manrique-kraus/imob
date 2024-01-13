@@ -79,7 +79,6 @@ header {
     display: none;
 }
 
-
 .container-busca {
     display: flex;
     justify-content: center;
@@ -93,9 +92,9 @@ header {
 }
 
 .container-busca .busca {
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 10px;
-    box-shadow: 0px 10px 20px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
     width: 85vw;
     height: 150px;
     padding: 20px 70px;
@@ -128,7 +127,7 @@ header {
 }
 
 .container-busca .botao-buscar button {
-    background-color:var(--cor-terciaria);
+    background-color: var(--cor-terciaria);
     width: 50px;
     height: 30px;
     border: solid 0.5px;
@@ -137,32 +136,67 @@ header {
 }
 
 .container-busca .botao-buscar button:hover {
-    background-color:var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
 }
 
 .container-busca .botao-buscar button:hover i {
-    color:var(--cor-branca);
+    color: var(--cor-branca);
 }
 
-.container-busca, .imagem-principal, .titulo-imoveis, .container-imoveis,
-.botao-ver-todos {
+.container-busca,
+.imagem-principal,
+.titulo-imoveis,
+.container-imoveis,
+.botao-ver-todos,
+.banner-mobile {
     visibility: hidden;
 }
 
-.imagem-principal {
-    margin-top: 40px;
-    background-image: url(http://placekitten.com/1920/500);
-    height: 500px;
-    background-size: cover;
+.inserir {
+    text-align: center;
+    margin: 150px 0;
+    font-size: 4rem;
 }
 
-.imagem-principal h2 {
-    font-size: 6rem;
+.banner-mobile {
+    display: none;
+}
+
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    text-align: center;
+    position: relative;
+}
+
+.container .left img {
+    width: 600px;
+    height: 300px;
+}
+
+.container .top img {
+    width: 200px;
+    height: 150px;
+}
+
+.container .right img {
+    width: 805px;
+    height: 300px;
+}
+
+.container .top {
+    position: absolute;
+    left: 515px;
+
+}
+
+.container .right {
+    position: absolute;
+    left: 520px;
+}
+
+.left,
+.top,
+.right {
+    visibility: hidden;
 }
 
 main {
@@ -192,7 +226,7 @@ main {
 .container-imoveis .caixa-imovel img {
     width: 100%
 }
-    
+
 .container-imoveis .caixa-imovel {
     background-color: var(--cor-branca);
     width: 280px;
@@ -252,7 +286,3 @@ main {
 .meio {
     text-align: center;
 }
-
-
-
-

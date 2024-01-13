@@ -5,7 +5,7 @@
         --cor-terciaria: #548CA8;
         --cor-branca: #EEEEEE;
     }
-    
+
     .nav-bar {
         padding: 15px 40px;
     }
@@ -46,6 +46,7 @@
         flex-direction: row;
         text-align: center;
         justify-content: center;
+        margin: 0 10px;
         padding-bottom: 10px;
     }
 
@@ -66,7 +67,7 @@
     .esconder {
         opacity: 0;
         transform: rotate(180deg);
-    } 
+    }
 
     .container-busca {
         height: 290px;
@@ -104,5 +105,27 @@
     .container-busca .busca .opcoes-busca option {
         font-size: 1rem;
     }
+
+    .container {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+        width: 100vw;
+        height: 400px;
+        background-image: url(http://placekitten.com/800/400);
+    }
+
+    .banner-mobile h3 {
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        color: #FFFFFF;
+    }
+
+
 
 }

@@ -1,10 +1,34 @@
 window.sr = ScrollReveal({ reset: true });
 
-ScrollReveal().reveal('.container-busca, .imagem-principal, .titulo-imoveis, .container-imoveis, .botao-ver-todos', {
+ScrollReveal().reveal('.container-busca, .banner-mobile, .titulo-imoveis, .container-imoveis, .botao-ver-todos', {
     origin: 'top',
     distance: '40px',
     duration: 2000,
     delay: 200,
+    easing: 'cubic-bezier(0, 0, 0, 1)',
+});
+
+ScrollReveal().reveal('.top', {
+    origin: 'top',
+    distance: '40px',
+    duration: 1500,
+    delay: 550,
+    easing: 'cubic-bezier(0, 0, 0, 1)',
+});
+
+ScrollReveal().reveal('.left', {
+    origin: 'left',
+    distance: '40px',
+    duration: 1500,
+    delay: 300,
+    easing: 'cubic-bezier(0, 0, 0, 1)',
+});
+
+ScrollReveal().reveal('.right', {
+    origin: 'right',
+    distance: '40px',
+    duration: 1500,
+    delay: 500,
     easing: 'cubic-bezier(0, 0, 0, 1)',
 });
 
@@ -18,4 +42,3 @@ function aparecerMenu() {
     botaoAbrir.classList.toggle("esconder")
     botaoFechar.classList.toggle("mostrar")
 }
- // colocar transition no menu q aparece
