@@ -389,12 +389,14 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    background-color: var(--cor-principal);
 }
 
 .footer .texto-footer {
     width: 100vw;
     text-align: center;
     font-size: 2rem;
+    color: #FFFFFF;
 }
 
 .footer .nav-footer {
@@ -406,11 +408,13 @@ section {
 .footer .nav-footer li {
     font-size: 1.7rem;
     transition: 0.2s ease;
+    color: #FFFFFF;
 }
 
 .footer .nav-footer li i {
     font-size: 2.2rem;
     transition: 0.2s ease;
+    color: #FFFFFF;
 }
 
 .footer .nav-footer li:hover,
