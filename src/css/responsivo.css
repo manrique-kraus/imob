@@ -115,6 +115,9 @@
         width: 100vw;
         height: 400px;
         background-image: url(http://placekitten.com/800/400);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .banner-mobile h3 {
@@ -126,6 +129,38 @@
         color: #FFFFFF;
     }
 
+    .bancos {
+        transform: rotateZ(0deg);
+        flex-direction: column;
+        height: 300px;
+    }
 
+    .bancos a {
+        width: 150px;
+        height: 60px;
+    }
+
+    .footer {
+        margin-top: 20px;
+    }
+
+    .footer .texto-footer {
+        font-size: 1.7rem;
+        padding: 10px 10px;
+    }
+
+    .footer .nav-footer {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .footer .nav-footer li {
+        font-size: 1.7rem;
+    }
+    
+    .footer .nav-footer li i {
+        font-size: 2.6rem;
+        padding-left: 5px;
+    }
 
 }

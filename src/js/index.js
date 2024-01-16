@@ -42,3 +42,10 @@ function aparecerMenu() {
     botaoAbrir.classList.toggle("esconder")
     botaoFechar.classList.toggle("mostrar")
 }
+
+
+const simular = document.getElementById('btn-financiamento');
+const bancos = document.querySelector('.bancos')
+simular.addEventListener('click', () => {
+    bancos.classList.toggle("mostrar")
+})
