@@ -152,18 +152,13 @@ header {
     visibility: hidden;
 }
 
-.inserir {
-    text-align: center;
-    margin: 150px 0;
-    font-size: 4rem;
-}
-
 .banner-mobile {
     display: none;
 }
 
 .container {
     display: flex;
+    justify-content: center;
     position: relative;
 }
 
@@ -180,6 +175,11 @@ header {
 .container .right img {
     width: 805px;
     height: 300px;
+}
+
+.container .left {
+    position: absolute;
+    left: 0;
 }
 
 .container .top {
@@ -202,8 +202,15 @@ header {
 section {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     align-items: center;
+    margin-top: 270px;
+}
+
+.titulo-imoveis {
+    font-size: 2.7rem;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .container-imoveis {
@@ -216,12 +223,6 @@ section {
     font-family: 'Open Sans', sans-serif;
 }
 
-.titulo-imoveis {
-    font-size: 2.7rem;
-    margin-top: 60px;
-    text-align: center;
-    margin-bottom: 30px;
-}
 
 .container-imoveis .caixa-imovel img {
     width: 100%
@@ -230,14 +231,15 @@ section {
 .container-imoveis .caixa-imovel {
     background-color: var(--cor-branca);
     width: 280px;
-    height: 385px;
+    height: 430px;
     transition: 0.4s ease-in-out;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
 .container-imoveis .caixa-imovel .valor,
-.container-imoveis .caixa-imovel .modalidade {
+.container-imoveis .caixa-imovel .modalidade,
+.container-imoveis .caixa-imovel .categoria {
     font-size: 2rem;
     padding: 5px 10px;
 }
@@ -376,6 +378,18 @@ section {
 .bancos a:hover {
     border: solid 1px var(--cor-terciaria);
     transform: translateY(-2px);
+}
+
+.botao-flutuante {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
+.botao-flutuante img {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
 }
 
 .mostrar {

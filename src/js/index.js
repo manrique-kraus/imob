@@ -49,3 +49,19 @@ const bancos = document.querySelector('.bancos')
 simular.addEventListener('click', () => {
     bancos.classList.toggle("mostrar")
 })
+
+
+//pegar o select com o botao
+//fazer percorrer o array
+//selecionar as options que eu quero
+//abrir em uma outra pagina os resultados
+
+let botaoPesquisar = document.getElementById('buscarImovel');
+const selects = document.querySelectorAll('#selector');
+const valorSelect = selects.values;
+console.log(valorSelect)
+
+
+botaoPesquisar.addEventListener('click', () => {
+
+})
