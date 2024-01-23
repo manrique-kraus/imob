@@ -51,17 +51,29 @@ simular.addEventListener('click', () => {
 })
 
 
-//pegar o select com o botao
-//fazer percorrer o array
-//selecionar as options que eu quero
-//abrir em uma outra pagina os resultados
+// pegar o select com o botao
+// fazer percorrer o array
+// selecionar as options que eu quero
+// abrir em uma outra pagina os resultados
 
-let botaoPesquisar = document.getElementById('buscarImovel');
-const selects = document.querySelectorAll('#selector');
-const valorSelect = selects.values;
-console.log(valorSelect)
+const button = document.querySelector('button')
+
+button.addEventListener('click', () => {
+    const searchOptions = document.querySelectorAll('select')
+    const selectedOptions = getSelectedOptions(searchOptions)
+    console.log(selectedOptions)
+});
 
 
-botaoPesquisar.addEventListener('click', () => {
+function getSelectedOptions(searchOptions) {
+    const selectedOptions = []
+    searchOptions.forEach(select => selectedOptions.push(select.value))
+    return selectedOptions
+}
 
-})
+
+
+
+
+
+

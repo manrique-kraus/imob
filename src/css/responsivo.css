@@ -44,6 +44,7 @@
     .menu-mobile ul {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         text-align: center;
         justify-content: center;
         margin: 0 10px;
@@ -146,8 +147,23 @@
 
     .botao-flutuante img {
         margin-left: 30px;
-        width: 65px;
+        width: 60px;
         height: 65px;
+    }
+
+    .container-sobre {
+        flex-direction: column;
+    }
+
+    .container-sobre .conteudo .conteudo-sobre {
+        font-size: 1.4rem;
+        margin-right: 50px;
+        width: 100%;
+        text-align: initial;
+    }
+
+    .container-sobre .imagem-sobre {
+        margin-top: 20px;
     }
 
     .footer {
