@@ -430,6 +430,24 @@ section {
     display: block flex;
 }
 
+.titulo-contato {
+    font-size: 3.6rem;
+    text-align: center;
+    padding: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
     height: 100px;
     display: flex;

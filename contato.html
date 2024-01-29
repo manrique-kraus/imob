@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="">
+                <img class="logo" src="./src/imagens/logo-yp.png" alt="Logo Imobiliária Your Place">
+            </a>
+            <!-- <div class="logo">
+                <img src="./src/imagens/logo-your-place.png" alt="Logo Imobiliária Your Place">
+                <a href="#">
+                    <h2>Your Place</h2>
+                </a>
+            </div> -->
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./imoveis.html" class="nav-link">Imóveis</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Junte-se a nós</a></li>
+                </ul>
+            </div>
+
+            <div class="icones">
+                <div class="icone-fechar-mobile">
+                    <!-- <p class="icone" onclick="aparecerMenu()">
+                        <i class="fa-solid fa-x"></i>
+                    </p> -->
+                    <a href="#" class="icone" onclick="aparecerMenu()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                </div>
+
+                <div class="icone-menu-mobile">
+                    <!-- <p class="icone" onclick="aparecerMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </p> -->
+                    <a href="#" class="icone" onclick="aparecerMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu-mobile">
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./imoveis.html" class="nav-link">Imóveis</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Junte-se a nós</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container-contato">
+        <div class="contato">
+            <h1 class="titulo-contato">Contato</h1>
+            <div class="infos-contato">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i> (42) 0000-0000</a>
+                <p><i class="fa-solid fa-phone"></i> (42) 0000-0000</p>
+                <p><i class="fa-regular fa-envelope"></i> yourplace@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Rua xxxxx xxxx xxxxx</p>
+                <a href="#"><i class="fa-brands fa-instagram"></i> @yourplace</a>
+            </div>
+
+            <div class="infos-enviar">
+                <textarea name="nome" id="nome" cols="70" rows="1" placeholder="Nome"></textarea>
+                <textarea name="telefone" id="telefone" cols="70" rows="1" placeholder="Telefone"></textarea>
+                <textarea name="email" id="email" cols="70" rows="1" placeholder="E-mail"></textarea>
+                <textarea name="mensagem" id="mensagem" cols="70" rows="10" placeholder="Mensagem"></textarea>
+                <button class="btn-enviar">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <h2 class="texto-footer">© 2024 Copyright Your Place Imobiliária Ltda | CRECI CJ 55555 | CNPJ 22.333.333/0001-22
+        </h2>
+        <nav class="nav-footer">
+            <a href="#">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="#">
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+            </a>
+            <a href="#">
+                <li><i class="fa-brands fa-facebook"></i></li>
+            </a>
+            <a href="#">
+                <li> &nbsp; yourplace@gmail.com</li>
+            </a>
+        </nav>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/2f44bb86e9.js" crossorigin="anonymous"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
