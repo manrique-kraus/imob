@@ -430,11 +430,75 @@ section {
     display: block flex;
 }
 
-.titulo-contato {
+.container-contato .contato {
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 60vh;
+}
+
+.container-contato .titulo-contato {
     font-size: 3.6rem;
     text-align: center;
-    padding: 35px;
+    padding: 25px;
 }
+
+.container-contato .contato .infos-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-contato .contato .infos-contato a,
+.container-contato .contato .infos-contato p {
+    font-size: 2rem;
+}
+
+.container-contato .contato .infos-contato i {
+    color: var(--cor-terciaria);
+}
+
+.container-contato .contato .infos-enviar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-contato .contato .infos-enviar:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.container-contato .contato .infos-enviar textarea {
+    border: solid 1px var(--cor-secundaria);
+    outline: none;
+    resize: none;
+    text-indent: 5px;
+}
+
+.container-contato .contato .infos-enviar textarea:first-child,
+.container-contato .contato .infos-enviar textarea:nth-child(2),
+.container-contato .contato .infos-enviar textarea:nth-child(3) {
+    height: 25px;
+}
+
+.container-contato .contato .infos-enviar .btn-enviar {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 40px;
+    font-size: 2rem;
+    border: none;
+    background-color: #334257;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.container-contato .contato .infos-enviar .btn-enviar:hover {
+    background-color: var(--cor-secundaria);
+}
+
 
 
 

@@ -166,6 +166,34 @@
         margin-top: 20px;
     }
 
+    .container-contato .contato {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .container-contato .titulo-contato {
+        padding: 10px;
+    }
+
+    .container-contato .contato .infos-contato {
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .container-contato .contato .infos-enviar textarea {
+        width: 95%;
+    }
+
+
+
+
+
+
+
+
+
+
     .footer {
         margin-top: 20px;
         height: 200px;
