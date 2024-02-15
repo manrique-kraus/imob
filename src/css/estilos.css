@@ -93,8 +93,7 @@ header {
 
 .container-busca .busca {
     background-color: #FFFFFF;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;
     width: 85vw;
     height: 150px;
     padding: 20px 70px;
@@ -483,7 +482,10 @@ section {
 }
 
 .container-contato .contato .infos-enviar .btn-enviar,
-.trabalhe-conosco .conteudo-trabalhe-conosco .btn-trabalhe  {
+.trabalhe-conosco .conteudo-trabalhe-conosco .btn-trabalhe,
+.comprar .botoes-comprar .btn-wpp,
+.comprar .botoes-comprar .btn-insta,
+.comprar .botoes-comprar .btn-email {
     margin-top: 10px;
     margin-bottom: 5px;
     width: 200px;
@@ -550,6 +552,164 @@ section {
 
 
 
+
+
+
+
+
+
+
+
+.infos-imoveis {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: red;
+    margin-top: 20px;
+}
+
+.imagens-imovel {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.imagens-imovel .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 300px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.imagens-imovel .slide.mostrar {
+    opacity: 1;
+}
+
+.slide-um {
+    background-image: url(http://placekitten.com/g/600/300);
+}
+
+.slide-dois {
+    background-image: url(http://placekitten.com/g/600/300);
+}
+
+.slide-tres {
+    background-image: url(http://placekitten.com/g/600/300);
+}
+
+.arrow-back,
+.arrow-go {
+    position: absolute;
+    z-index: 1;
+}
+
+.arrow-back {
+    left: 4%;
+}
+
+.arrow-go {
+    right: -16%;
+    transform: rotateY(180deg);
+}
+
+.opacity {
+    opacity: 0.6;
+    cursor: default;
+}
+
+/* ------------ */
+
+.container-infos-comprar {
+}
+
+.container-infos-comprar  .descricao-mapa {
+    width: 55%;
+    padding: 25px 20px;
+}
+
+.container-infos-comprar  .descricao-mapa .descricao {
+    background-color: lawngreen;
+}
+
+.container-infos-comprar .descricao-mapa h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+
+.container-infos-comprar .descricao-mapa .categoria-e-preco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-infos-comprar .descricao-mapa .descricao p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.container-infos-comprar .comprar {
+    position: absolute;
+    top: 100%;
+    right: 8%;
+}
+
+.container-infos-comprar .comprar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+}
+
+.container-infos-comprar .comprar .titulo-comprar {
+    font-size: 2.4rem;
+    margin-top: 30px;
+}
+
+.container-infos-comprar .comprar .texto-comprar {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.container-infos-comprar .comprar .botoes-comprar {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.comprar .botoes-comprar .btn-wpp,
+.comprar .botoes-comprar .btn-insta,
+.comprar .botoes-comprar .btn-email {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 255px;
+    height: 60px;
+}
+
+.comprar .botoes-comprar .btn-wpp {
+    background-color: #0B6138;
+}
+
+.comprar .botoes-comprar .btn-insta {
+    background-color: #B4045F;
+}
+
+.comprar .botoes-comprar .btn-email {
+    background-color: #8B0000
+}
 
 
 

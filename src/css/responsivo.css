@@ -186,6 +186,30 @@
     }
 
 
+    .trabalhe-conosco {
+        flex-direction: column;
+    }
+
+    .trabalhe-conosco .conteudo-trabalhe-conosco {
+        width: 100vw;
+    }
+
+    .trabalhe-conosco .conteudo-trabalhe-conosco .titulo-trabalhe {
+        text-align: center;
+    }
+
+    .trabalhe-conosco .conteudo-trabalhe-conosco .descricao-trabalhe {
+        width: 80%;
+    }
+
+    .trabalhe-conosco .logo-trabalhe {
+       width: 100vw;
+    }
+
+    .trabalhe-conosco .logo-trabalhe img {
+        width: 260px;
+        height: 25vh;
+    }
 
 
 
