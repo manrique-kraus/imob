@@ -555,15 +555,25 @@ section {
 
 
 
+.infos-imoveis .caixa-imovel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
+.infos-imoveis .caixa-imovel.produto {
+    height: 10%;
+    width: 90%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .infos-imoveis {
     display: flex;
     justify-content: space-evenly;
-    background-color: red;
     margin-top: 20px;
 }
 
@@ -604,6 +614,10 @@ section {
     background-image: url(http://placekitten.com/g/600/300);
 }
 
+.image-arrow {
+    width: 35px;
+}
+
 .arrow-back,
 .arrow-go {
     position: absolute;
@@ -627,15 +641,22 @@ section {
 /* ------------ */
 
 .container-infos-comprar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
 }
 
-.container-infos-comprar  .descricao-mapa {
+.container-infos-comprar .descricao-mapa {
     width: 55%;
     padding: 25px 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-infos-comprar  .descricao-mapa .descricao {
-    background-color: lawngreen;
+    
 }
 
 .container-infos-comprar .descricao-mapa h2 {
@@ -656,19 +677,20 @@ section {
     margin-bottom: 20px;
 }
 
-.container-infos-comprar .comprar {
-    position: absolute;
-    top: 100%;
-    right: 8%;
+.container-infos-comprar .descricao-mapa .mapa img {
+    width: 100%;
 }
+
 
 .container-infos-comprar .comprar {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 30%;
     height: 80%;
+    margin-top: 25px;
 }
 
 .container-infos-comprar .comprar .titulo-comprar {
