@@ -215,6 +215,59 @@
 
 
 
+    .slide-um {
+        background-image: url(http://placekitten.com/g/600/300);
+    }
+    
+    .slide-dois {
+        background-image: url(http://placekitten.com/g/600/300);
+    }
+    
+    .slide-tres {
+        background-image: url(http://placekitten.com/g/600/300);
+    }
+
+
+    .infos-imoveis {
+        background-color: red;
+        flex-direction: column-reverse;
+    }
+
+
+    .infos-imoveis .imagens-imovel {
+        background-color: blue;
+        transform: rotate(180deg);
+        width: 600px;
+    }
+
+
+
+    
+    .container-infos-comprar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-infos-comprar .descricao-mapa .descricao {
+        width: 85vw;
+    }
+
+    .container-infos-comprar .descricao-mapa .descricao p {
+        text-align: justify;
+    }
+   
+    .container-infos-comprar .descricao-mapa .mapa {
+        width: 85vw;
+    }
+
+    .container-infos-comprar .comprar {
+        width: 90vw;
+    }
+
+
+
+
+
 
 
 

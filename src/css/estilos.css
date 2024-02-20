@@ -655,9 +655,9 @@ section {
     flex-direction: column;
 }
 
-.container-infos-comprar  .descricao-mapa .descricao {
+/* .container-infos-comprar  .descricao-mapa .descricao {
     
-}
+} */
 
 .container-infos-comprar .descricao-mapa h2 {
     font-size: 2rem;
@@ -681,39 +681,45 @@ section {
     width: 100%;
 }
 
+.container-infos-comprar .container-comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.container-infos-comprar .comprar {
+.container-infos-comprar .container-comprar .comprar {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 75%;
     height: 80%;
     margin-top: 25px;
 }
 
-.container-infos-comprar .comprar .titulo-comprar {
+.container-infos-comprar .container-comprar .titulo-comprar {
+    text-align: center;
     font-size: 2.4rem;
     margin-top: 30px;
 }
 
-.container-infos-comprar .comprar .texto-comprar {
+.container-infos-comprar .container-comprar .comprar .texto-comprar {
     text-align: center;
     padding: 15px;
     font-size: 1.5rem;
     font-weight: 300;
 }
 
-.container-infos-comprar .comprar .botoes-comprar {
+.container-infos-comprar .container-comprar .comprar .botoes-comprar {
     display: flex;
     flex-direction: column;
     padding: 50px;
 }
 
-.comprar .botoes-comprar .btn-wpp,
-.comprar .botoes-comprar .btn-insta,
-.comprar .botoes-comprar .btn-email {
+.container-comprar .comprar .botoes-comprar .btn-wpp,
+.container-comprar .comprar .botoes-comprar .btn-insta,
+.container-comprar .comprar .botoes-comprar .btn-email {
     text-align: center;
     display: flex;
     align-items: center;
@@ -721,17 +727,20 @@ section {
     height: 60px;
 }
 
-.comprar .botoes-comprar .btn-wpp {
+.container-comprar .comprar .botoes-comprar .btn-wpp {
     background-color: #0B6138;
 }
 
-.comprar .botoes-comprar .btn-insta {
+.container-comprar .comprar .botoes-comprar .btn-insta {
     background-color: #B4045F;
 }
 
-.comprar .botoes-comprar .btn-email {
+.container-comprar .comprar .botoes-comprar .btn-email {
     background-color: #8B0000
 }
+
+
+
 
 
 
