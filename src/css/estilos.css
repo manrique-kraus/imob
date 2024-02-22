@@ -321,7 +321,7 @@ section {
 
 .container-imoveis .caixa-imovel {
     background-color: var(--cor-branca);
-    width: 280px;
+    width: 240px;
     height: 430px;
     transition: 0.4s ease-in-out;
     cursor: pointer;
