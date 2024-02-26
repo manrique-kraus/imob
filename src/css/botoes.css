@@ -1,0 +1,148 @@
+.container-busca .botao-buscar {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.container-busca .botao-buscar button {
+    background-color: var(--cor-terciaria);
+    width: 50px;
+    height: 30px;
+    border: solid 0.5px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.container-busca .botao-buscar button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.container-busca .botao-buscar button:hover i {
+    color: var(--cor-branca);
+}
+
+.financiamento .botao-financiamento {
+    background-color: #FFFFFF;
+    width: 350px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.financiamento .botao-financiamento:hover {
+    background: rgb(71,96,114);
+    background: linear-gradient(90deg, rgba(71,96,114,1) 90%, rgba(0,0,0,1) 100%);
+    color: #FFFFFF;
+    width: 355px;
+    height: 40px;
+}
+
+.financiamento .botao-financiamento:hover i {
+    color: #FFFFFF;
+}
+
+.botao-ver-todos button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 2rem;
+    border: none;
+    background-color: #334257;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.botao-ver-todos button:hover {
+    background-color: #476072;
+}
+
+.container-contato .contato .infos-enviar .btn-enviar,
+.trabalhe-conosco .conteudo-trabalhe-conosco .btn-trabalhe,
+.comprar .botoes-comprar .btn-wpp,
+.comprar .botoes-comprar .btn-insta,
+.comprar .botoes-comprar .btn-email {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 40px;
+    font-size: 2rem;
+    border: none;
+    background-color: #334257;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.container-contato .contato .infos-enviar .btn-enviar:hover,
+.trabalhe-conosco .conteudo-trabalhe-conosco .btn-trabalhe:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.trabalhe-conosco .conteudo-trabalhe-conosco .btn-trabalhe {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-comprar .comprar .botoes-comprar .btn-wpp,
+.container-comprar .comprar .botoes-comprar .btn-insta,
+.container-comprar .comprar .botoes-comprar .btn-email {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 255px;
+    height: 60px;
+}
+
+.container-comprar .comprar .botoes-comprar .btn-wpp {
+    background-color: #0B6138;
+}
+
+.container-comprar .comprar .botoes-comprar .btn-insta {
+    background-color: #B4045F;
+}
+
+.container-comprar .comprar .botoes-comprar .btn-email {
+    background-color: #8B0000
+}
+
+.botao-flutuante {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
+.botao-flutuante img {
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+}
+
+
+
+
+@media (max-width: 730px) {
+    .container-busca .botao-buscar {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .container-busca .botao-buscar button {
+        width: 100px;
+        height: 30px;
+    }
+    
+    .botao-flutuante img {
+        margin-left: 30px;
+        width: 60px;
+        height: 65px;
+    }
+}
