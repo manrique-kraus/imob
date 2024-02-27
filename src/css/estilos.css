@@ -492,15 +492,15 @@ section {
     opacity: 1;
 }
 
-.slide-um {
-    background-image: url(http://placekitten.com/g/600/300);
+.imagens-imovel .slide-um {
+    background-image: url(http://placekitten.com/g/598/300);
 }
 
-.slide-dois {
-    background-image: url(http://placekitten.com/g/600/300);
+.imagens-imovel .slide-dois {
+    background-image: url(http://placekitten.com/g/599/300);
 }
 
-.slide-tres {
+.imagens-imovel .slide-tres {
     background-image: url(http://placekitten.com/g/600/300);
 }
 
