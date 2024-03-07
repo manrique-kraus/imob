@@ -37,26 +37,62 @@ ScrollReveal().reveal('.right', {
 
 function aparecerMenu() {
     const menuMobile = document.querySelector('.menu-mobile');
-    let botaoAbrir = document.querySelector(".icone-menu-mobile");
-    let botaoFechar = document.querySelector(".icone-fechar-mobile");
+    let botaoAbrir = document.querySelector('.icone-menu-mobile');
+    let botaoFechar = document.querySelector('.icone-fechar-mobile');
 
-    menuMobile.classList.toggle("abrir")
-    botaoAbrir.classList.toggle("esconder")
-    botaoFechar.classList.toggle("mostrar")
+    menuMobile.classList.toggle('abrir');
+    botaoAbrir.classList.toggle('esconder');
+    botaoFechar.classList.toggle('mostrar');
 }
+
+//carrossel
+
+const slider = document.querySelectorAll('.slider');
+const btnVoltar = document.getElementById('botao-voltar');
+const btnAvancar = document.getElementById('botao-avancar');
+
+let currentSlide = 0;
+
+function esconderSlider() {
+  slider.forEach(item => item.classList.remove('on'))
+}
+
+function mostrarSlider() {
+  slider[currentSlide].classList.add('on')
+}
+
+function avancarSlider() {
+  esconderSlider()
+  if(currentSlide === slider.length -1) {
+    currentSlide = 0
+  } else {
+    currentSlide++
+  }
+  mostrarSlider()
+}
+
+function voltarSlider() {
+  esconderSlider()
+  if(currentSlide === 0) {
+    currentSlide = slider.length -1
+  } else {
+    currentSlide--
+  }
+  mostrarSlider()
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btnVoltar = document.getElementById('botao-voltar');
+  btnVoltar.addEventListener('click', voltarSlider);
+
+  const btnAvancar = document.getElementById('botao-avancar');
+  btnAvancar.addEventListener('click', avancarSlider);
+});
 
 //simulacao
 
-const simular = document.getElementById('btn-financiamento');
+let simular = document.querySelector('.botao-financiamento');
 const bancos = document.querySelector('.bancos')
 simular.addEventListener('click', () => {
-    bancos.classList.toggle("mostrar")
+  bancos.classList.toggle("mostrar");
 });
-
-
-
-
-
-
-
-
