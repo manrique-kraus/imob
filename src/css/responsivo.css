@@ -185,7 +185,7 @@
     }
 
     .trabalhe-conosco .logo-trabalhe {
-       width: 100vw;
+        width: 100vw;
     }
 
     .trabalhe-conosco .logo-trabalhe img {
@@ -193,25 +193,14 @@
         height: 25vh;
     }
 
-    .slide-um {
-        background-image: url(http://placekitten.com/g/600/300);
+    .container-slider {
+        padding: 10px;
+        min-height: 50vh;
     }
-    
-    .slide-dois {
-        background-image: url(http://placekitten.com/g/600/300);
-    }
-    
-    .slide-tres {
-        background-image: url(http://placekitten.com/g/600/300);
-    }
+
 
     .infos-imoveis {
         flex-direction: column-reverse;
-    }
-
-    .infos-imoveis .imagens-imovel {
-        transform: rotate(180deg);
-        width: 600px;
     }
 
     .container-infos-comprar {
@@ -226,7 +215,7 @@
     .container-infos-comprar .descricao-mapa .descricao p {
         text-align: justify;
     }
-   
+
     .container-infos-comprar .descricao-mapa .mapa {
         width: 85vw;
     }
@@ -255,7 +244,7 @@
     .footer .nav-footer li {
         font-size: 1.7rem;
     }
-    
+
     .footer .nav-footer li i {
         font-size: 2.6rem;
         padding-left: 5px;
