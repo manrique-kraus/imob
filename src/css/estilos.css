@@ -483,6 +483,10 @@ section {
     transition: opacity .2s;
 }
 
+.texto-informacoes {
+    text-align: center;
+}
+
 .on {
     opacity: 1;
 }
