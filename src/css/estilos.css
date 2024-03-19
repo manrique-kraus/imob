@@ -5,6 +5,16 @@
     --cor-branca: #EEEEEE;
 }
 
+.container-busca,
+.imagem-principal,
+.titulo-imoveis,
+.container-imoveis,
+.botao-ver-todos,
+.banner-mobile,
+.container-slider {
+    visibility: hidden;
+}
+
 header {
     background-color: var(--cor-principal);
     border-bottom: #EEEEEE;
@@ -102,15 +112,6 @@ header {
     margin: 10px;
 }
 
-.container-busca,
-.imagem-principal,
-.titulo-imoveis,
-.container-imoveis,
-.botao-ver-todos,
-.banner-mobile {
-    visibility: hidden;
-}
-
 .financiamento {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(54, 128, 164, 1) 100%);
@@ -184,54 +185,14 @@ header {
     display: none;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.container .left img {
-    width: 600px;
-    height: 300px;
-}
-
-.container .top img {
-    width: 200px;
-    height: 150px;
-}
-
-.container .right img {
-    width: 805px;
-    height: 300px;
-}
-
-.container .left {
-    position: absolute;
-    left: 10px;
-}
-
-.container .top {
-    position: absolute;
-    left: 525px;
-
-}
-
-.container .right {
-    position: absolute;
-    left: 530px;
-}
-
-.left,
-.top,
-.right {
-    visibility: hidden;
+.container img {
+    width: 100%;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 270px;
 }
 
 .titulo-imoveis {
@@ -343,6 +304,26 @@ section {
     margin-bottom: 30px;
 }
 
+.pag-imoveis.todos-imoveis {
+    flex-direction: row;
+}
+
+.pag-imoveis .container-filtro {
+    width: 10%;
+    height: 500px;
+    padding: 100px;
+    margin: 0 20px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.pag-imoveis .container-filtro p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
 .mostrar {
     display: block flex;
 }
@@ -400,8 +381,8 @@ section {
 }
 
 .trabalhe-conosco {
-    background-color: var(--cor-terciaria);
     display: flex;
+    height: 100vh;
 }
 
 .trabalhe-conosco .conteudo-trabalhe-conosco {
@@ -409,8 +390,8 @@ section {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: var(--cor-branca);
 }
 
 .trabalhe-conosco .conteudo-trabalhe-conosco .titulo-trabalhe {
@@ -435,8 +416,8 @@ section {
 }
 
 .trabalhe-conosco img {
-    width: 500px;
-    height: 350px;
+    width: 600px;
+    height: 400px;
 }
 
 .trabalhe-conosco .logo-trabalhe {
@@ -470,7 +451,7 @@ section {
 .container-slider {
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -482,6 +463,16 @@ section {
     align-items: center;
     justify-content: center;
     width: 750px;
+    height: 400px;
+}
+
+.caixa-imovel.produto {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 1.5rem;
 }
 
 .slider {
@@ -556,8 +547,9 @@ section {
 }
 
 .container-infos-comprar .container-comprar .comprar {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    background-color: white;
+    background: rgb(51,66,87);
+    background: linear-gradient(13deg, rgba(51,66,87,1) 14%, rgba(71,96,114,1) 51%, rgba(84,140,168,1) 86%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -576,8 +568,8 @@ section {
 .container-infos-comprar .container-comprar .comprar .texto-comprar {
     text-align: center;
     padding: 15px;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
 .container-infos-comprar .container-comprar .comprar .botoes-comprar {

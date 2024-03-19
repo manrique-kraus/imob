@@ -92,26 +92,22 @@
     align-items: center;
 }
 
-.container-comprar .comprar .botoes-comprar .btn-wpp,
-.container-comprar .comprar .botoes-comprar .btn-insta,
-.container-comprar .comprar .botoes-comprar .btn-email {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    width: 255px;
-    height: 60px;
+.container-comprar .comprar .botoes-comprar {
+    font-size: 6rem;
+    gap: 20px;
 }
 
-.container-comprar .comprar .botoes-comprar .btn-wpp {
-    background-color: #0B6138;
+.container-comprar .comprar .botoes-comprar a:last-child {
+    font-size: 5.5rem;
 }
 
-.container-comprar .comprar .botoes-comprar .btn-insta {
-    background-color: #B4045F;
+.container-comprar .comprar .botoes-comprar i {
+    transition: ease 0.5s;
+    color: #F8F8FF;
 }
 
-.container-comprar .comprar .botoes-comprar .btn-email {
-    background-color: #8B0000
+.container-comprar .comprar .botoes-comprar i:hover {
+    color: #5CE1E6;
 }
 
 .botao-flutuante {

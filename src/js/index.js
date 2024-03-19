@@ -1,6 +1,6 @@
 window.sr = ScrollReveal({ reset: true });
 
-ScrollReveal().reveal('.container-busca, .banner-mobile, .titulo-imoveis, .container-imoveis, .botao-ver-todos', {
+ScrollReveal().reveal('.container-busca, .banner-mobile, .titulo-imoveis, .container-imoveis, .botao-ver-todos, .container-slider', {
     origin: 'top',
     distance: '40px',
     duration: 2000,
@@ -8,27 +8,12 @@ ScrollReveal().reveal('.container-busca, .banner-mobile, .titulo-imoveis, .conta
     easing: 'cubic-bezier(0, 0, 0, 1)',
 });
 
-ScrollReveal().reveal('.top', {
-    origin: 'top',
-    distance: '40px',
-    duration: 1500,
-    delay: 550,
-    easing: 'cubic-bezier(0, 0, 0, 1)',
-});
 
-ScrollReveal().reveal('.left', {
+ScrollReveal().reveal('.container', {
     origin: 'left',
     distance: '40px',
-    duration: 1500,
-    delay: 300,
-    easing: 'cubic-bezier(0, 0, 0, 1)',
-});
-
-ScrollReveal().reveal('.right', {
-    origin: 'right',
-    distance: '40px',
-    duration: 1500,
-    delay: 500,
+    duration: 4000,
+    delay: 400,
     easing: 'cubic-bezier(0, 0, 0, 1)',
 });
 

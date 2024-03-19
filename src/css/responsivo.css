@@ -169,7 +169,7 @@
     }
 
     .trabalhe-conosco {
-        flex-direction: column;
+        height: 60vh;
     }
 
     .trabalhe-conosco .conteudo-trabalhe-conosco {
@@ -185,19 +185,23 @@
     }
 
     .trabalhe-conosco .logo-trabalhe {
-        width: 100vw;
+        display: none;
     }
 
     .trabalhe-conosco .logo-trabalhe img {
-        width: 260px;
-        height: 25vh;
+        width: 600px;
+        height: 400px;
     }
 
     .container-slider {
-        padding: 10px;
-        min-height: 50vh;
+        min-height: 1vh;
     }
 
+    .caixa-imovel.produto {
+        flex-wrap: wrap;
+        padding: 30px;
+        margin-top: 0;
+    }
 
     .infos-imoveis {
         flex-direction: column-reverse;
@@ -222,6 +226,16 @@
 
     .container-infos-comprar .comprar {
         width: 90vw;
+    }
+
+    .pag-imoveis.todos-imoveis {
+        flex-direction: column;
+    }
+
+    .pag-imoveis .container-filtro {
+        width: 90%;
+        height: 5%;
+        margin-top: 10px;
     }
 
 
