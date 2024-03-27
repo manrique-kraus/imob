@@ -103,7 +103,8 @@ header {
     padding-top: 25px;
 }
 
-.container-busca .busca .opcoes-busca select {
+.container-busca .busca .opcoes-busca select,
+.pag-imoveis .container-filtro select {
     background-color: #FFFFFF;
     width: 150px;
     height: 30px;
@@ -309,20 +310,21 @@ section {
 }
 
 .pag-imoveis .container-filtro {
-    width: 10%;
+    width: 15%;
     height: 500px;
-    padding: 100px;
-    margin: 0 20px;
-    background-color: #000000;
+    padding: 5px;
+    margin: auto 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.pag-imoveis .container-filtro p {
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 1.7rem;
+.pag-imoveis .container-filtro  label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: -10px;
 }
+
 
 .mostrar {
     display: block flex;

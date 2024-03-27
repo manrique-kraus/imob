@@ -81,3 +81,26 @@ const bancos = document.querySelector('.bancos')
 simular.addEventListener('click', () => {
   bancos.classList.toggle("mostrar");
 });
+
+
+//filtro
+
+function filtrarImoveis() {
+  var quartos = document.getElementById("quartos").value;
+  var modalidade = document.getElementById("modalidade").value;
+
+  var imoveis = document.querySelectorAll(".caixa-imovel");
+
+  imoveis.forEach(function(imovel) {
+      var temQuartos = imovel.querySelector(".quartos").textContent.charAt(0);
+      var modalidadeImovel = imovel.querySelector(".modalidade").textContent.toLowerCase();
+
+      if ((quartos === "0" || quartos === temQuartos) && (modalidade === "todos" || modalidade === modalidadeImovel)) {
+          imovel.style.display = "block";
+      } else {
+          imovel.style.display = "none";
+      }
+  });
+}
+
+

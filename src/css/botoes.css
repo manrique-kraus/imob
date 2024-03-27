@@ -64,7 +64,8 @@
 .trabalhe-conosco .conteudo-trabalhe-conosco .btn-trabalhe,
 .comprar .botoes-comprar .btn-wpp,
 .comprar .botoes-comprar .btn-insta,
-.comprar .botoes-comprar .btn-email {
+.comprar .botoes-comprar .btn-email,
+.container-filtro .filtrar {
     margin-top: 10px;
     margin-bottom: 5px;
     width: 200px;
@@ -77,8 +78,14 @@
     transition: 0.2s ease;
 }
 
+.container-filtro .filtrar {
+    width: 90%;
+    height: 33px;
+}
+
 .container-contato .contato .infos-enviar .btn-enviar:hover,
-.trabalhe-conosco .conteudo-trabalhe-conosco .btn-trabalhe:hover {
+.trabalhe-conosco .conteudo-trabalhe-conosco .btn-trabalhe:hover,
+.container-filtro .filtrar:hover {
     background-color: var(--cor-secundaria);
 }
 
