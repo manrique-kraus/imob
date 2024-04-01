@@ -238,7 +238,29 @@
         margin-top: 10px;
     }
 
+    .pag-imoveis.todos-imoveis option {
+        font-size: 1rem;
+    }
 
+    .pai h1 {
+        codigo
+    }
+
+    .pai h2 {
+        codigo
+    }
+
+    .pai p {
+        codigo
+    }
+
+
+
+    .endereco .localizacao {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 
     .footer {
         margin-top: 20px;
