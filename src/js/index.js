@@ -86,42 +86,81 @@ simular.addEventListener('click', () => {
 //filtro
 
 // function filtrarImoveis() {
-//   var quartos = document.getElementById("quartos").value;
-//   var modalidade = document.getElementById("modalidade").value;
+//   let quartos = document.getElementById("quartos").value;
+//   let modalidade = document.getElementById("modalidade").value;
+//   let categoria = document.getElementById("categoria").value;
+//   let localidade = document.getElementById("localidade").value;
+//   let valor = document.getElementById("valor").value;
 
-//   var imoveis = document.querySelectorAll(".caixa-imovel");
+//   let imoveis = document.querySelectorAll(".caixa-imovel");
 
-//   imoveis.forEach(function (imovel) {
-//     var temQuartos = parseInt(imovel.querySelector(".quartos").textContent);
+//   imoveis.forEach(function(imovel) {
+//     const temQuartos = parseInt(imovel.querySelector(".quartos").textContent);
+//     const modalidadeImovel = imovel.querySelector(".modalidade").textContent.toLowerCase();
+//     const categoriaImovel = imovel.querySelector(".categoria").textContent.toLowerCase();
+//     const bairroImovel = imovel.querySelector(".localidade").textContent.trim().toLowerCase();
+//     const valorImovel = parseFloat(imovel.querySelector(".valor").textContent.replace("R$ ", "").replace(".", "").replace(",", "."));
 
+//     console.log("valor selecionado:", valor);
+//     console.log("valor do imóvel:", valorImovel);
 
-//     var modalidadeImovel = imovel.querySelector(".modalidade").textContent.toLowerCase();
-
-//     if ((quartos === "0" || quartos === temQuartos) && (modalidade === "todos" || modalidade === modalidadeImovel)) {
+//     if ((quartos === "0" || quartos == temQuartos) &&
+//         (modalidade === "todos" || modalidade === modalidadeImovel) &&
+//         (categoria === "todas" || categoria === categoriaImovel) &&
+//         (localidade === "todos" || localidade === bairroImovel) &&
+//         (valor === "todos" || (valor === "100" && valorImovel <= 100000) ||
+//          (valor === "150" && valorImovel <= 150000) ||
+//          (valor === "200" && valorImovel <= 200000) ||
+//          (valor === "250" && valorImovel <= 250000))) {
 //       imovel.style.display = "block";
 //     } else {
 //       imovel.style.display = "none";
 //     }
+
 //   });
 // }
 
 function filtrarImoveis() {
-  var quartos = document.getElementById("quartos").value;
-  var modalidade = document.getElementById("modalidade").value;
+  let quartos = document.getElementById("quartos").value;
+  let modalidade = document.getElementById("modalidade").value;
+  let categoria = document.getElementById("categoria").value;
+  let localidade = document.getElementById("localidade").value;
+  let valor = document.getElementById("valor").value;
 
-  var imoveis = document.querySelectorAll(".caixa-imovel");
+  let imoveis = document.querySelectorAll(".caixa-imovel");
 
-  imoveis.forEach(function(imovel) {
-      var temQuartos = parseInt(imovel.querySelector(".quartos p").textContent);
-      var modalidadeImovel = imovel.querySelector(".modalidade").textContent.toLowerCase();
+  imoveis.forEach(function (imovel) {
+      const temQuartos = parseInt(imovel.querySelector(".quartos").textContent);
+      const modalidadeImovel = imovel.querySelector(".modalidade").textContent.toLowerCase();
+      const categoriaImovel = imovel.querySelector(".categoria").textContent.toLowerCase();
+      const bairroImovel = imovel.querySelector(".localidade").textContent.trim().toLowerCase();
+      const valorImovel = parseFloat(imovel.querySelector(".valor").textContent.replace("R$ ", "").replace(".", "").replace(",", "."));
 
-      if ((quartos === "0" || quartos == temQuartos) && (modalidade === "todos" || modalidade === modalidadeImovel)) {
+      console.log("valor selecionado:", valor);
+      console.log("valor do imóvel:", valorImovel);
+
+      if ((quartos === "0" || quartos == temQuartos) &&
+          (modalidade === "todos" || modalidade === modalidadeImovel) &&
+          (categoria === "todas" || categoria === categoriaImovel) &&
+          (localidade === "todos" || localidade === bairroImovel) &&
+          (valor === "todos" ||
+              (valor === "100" && valorImovel <= 100000) ||
+              (valor === "150" && valorImovel <= 150000) ||
+              (valor === "200" && valorImovel <= 200000) ||
+              (valor === "250" && valorImovel <= 250000))) {
           imovel.style.display = "block";
       } else {
           imovel.style.display = "none";
       }
   });
 }
+
+
+
+
+
+
+
 
 
 

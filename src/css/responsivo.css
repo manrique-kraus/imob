@@ -164,8 +164,9 @@
         padding: 25px;
     }
 
+    .container-contato .contato .infos-enviar input,
     .container-contato .contato .infos-enviar textarea {
-        width: 95%;
+        width: 90%;
     }
 
     .trabalhe-conosco {
@@ -242,19 +243,35 @@
         font-size: 1rem;
     }
 
-    .pai h1 {
-        codigo
+    .barra-mobile {
+        display: block;
+        background-color: #548CA8;
+        width: 100vw; 
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
     }
 
-    .pai h2 {
-        codigo
+    .barra-fixa {
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
     }
 
-    .pai p {
-        codigo
+    .barra-mobile ul {
+        height: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .barra-mobile li {
+        font-size: 2.2rem;
     }
 
 
+
+    
 
     .endereco .localizacao {
         display: flex;

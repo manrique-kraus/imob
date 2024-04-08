@@ -78,16 +78,28 @@
                 <a href="https://www.instagram.com/vniciusdelima/"><i class="fa-brands fa-instagram"></i> @yourplace</a>
             </div>
 
-            <div class="infos-enviar">
-                <textarea name="nome" id="nome" cols="50" rows="1" placeholder="Nome"></textarea>
-                <textarea name="telefone" id="telefone" cols="50" rows="1" placeholder="Telefone"></textarea>
-                <textarea name="email" id="email" cols="50" rows="1" placeholder="E-mail"></textarea>
-                <textarea name="mensagem" id="mensagem" cols="50" rows="10" placeholder="Mensagem"></textarea>
-                <button class="btn-enviar">Enviar</button>
-            </div>
+            <form class="infos-enviar" action="https://formsubmit.co/krausmanrique@gmail.com" method="POST">
+                <input type="text" name="name" required placeholder="Nome">
+                <input type="tel" name="telefone" required placeholder="Telefone">
+                <input type="email" name="email" required placeholder="Seu e-mail">
+                <textarea name="mensagem" cols="50" rows="10" required placeholder="Mensagem"></textarea>
+                <button type="submit" class="btn-enviar">Enviar</button>
+
+                <input type="hidden" name="_subject" value="Novo Contato">
+                <input type="text" name="_honey" style="display:none;">
+                <input type="hidden" name="_captcha" value="false">
+           </form>
         </div>
     </div>
 
+    <div class="barra-mobile">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </div>
 
     <footer class="footer">
         <h2 class="texto-footer">© 2024 Copyright Your Place Imobiliária Ltda | CRECI CJ 55555 | CNPJ 22.333.333/0001-22
