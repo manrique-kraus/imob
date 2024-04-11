@@ -1,7 +1,13 @@
 .container-busca .botao-buscar {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-left: 10px;
+    gap: 8px;
+}
+
+.container-busca .botao-buscar a {
+    font-size: 1.1rem;
 }
 
 .container-busca .botao-buscar button {
@@ -168,5 +174,10 @@
 
     #botao-voltar, #botao-avancar {
         height: 17px;
+    }
+
+    .container-filtro .filtrar,
+    .pag-imoveis .container-filtro a {
+        width: 100%;
     }
 }

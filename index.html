@@ -70,43 +70,241 @@
     <div class="container-busca">
         <div class="busca">
             <h2 class="titulo-busca">Encontre seu futuro imóvel</h2>
-
             <div class="container-opcoes-de-busca">
                 <div class="opcoes-busca">
-                    <select name="modalidade" id="modalidade">
-                        <option value="" disabled selected hidden>Modalidade</option>
-                        <option value="venda">Venda</option>
-                        <option value="aluguel">Aluguel</option>
-                        <option value="aluguel-e-venda">Ambos</option>
-                    </select>
+                    <div class="opcoes">
+                        <label for="modalidade">Modalidade</label>
+                        <select id="modalidade">
+                            <option value="todos">Todos</option>
+                            <option value="venda">Venda</option>
+                            <option value="aluguel">Aluguel</option>
+                        </select>
+                    </div>
 
-                    <select name="categoria" id="categoria">
-                        <option value="" disabled selected hidden>Categoria</option>
-                        <option value="casa">Casa</option>
-                        <option value="sobrado">Sobrado</option>
-                        <option value="terreno">Terreno</option>
-                        <option value="comercial">Comercial</option>
-                        <option value="rural">Imóvel Rural</option>
-                    </select>
+                    <div class="opcoes">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria">
+                            <option value="todas">Todas</option>
+                            <option value="casa">Casa</option>
+                            <option value="sobrado">Sobrado</option>
+                            <option value="terreno">Terreno</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="imovel-rual">Imóvel Rural</option>
+                        </select>
+                    </div>
 
-                    <select name="bairro" id="bairro">
-                        <option value="" disabled selected hidden>Bairro</option>
-                        <option value="vila-carli">Vila Carli</option>
-                        <option value="vila-bela">Vila Bela</option>
-                        <option value="centro">Centro</option>
-                    </select>
+                    <div class="opcoes">
+                        <label for="localidade">Bairro</label>
+                        <select id="localidade">
+                            <option value="todos">Todos</option>
+                            <option value="vila carli">Vila Carli</option>
+                            <option value="vila bela">Vila Bela</option>
+                            <option value="conradinho">Conradinho</option>
+                            <option value="centro">Centro</option>
+                        </select>
+                    </div>
 
                     <div class="botao-buscar">
-                        <button id="buscarImovel">
-                            <a href="./imoveis.html">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a>
+                        <a href="index.html">Limpar</a>
+                        <button id="buscarImoveis" onclick=filtrarImoveisPrincipal()>
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
+
+                    
                 </div>
             </div>
         </div>
     </div>
+
+    <section class="pag-imoveis">
+        <!-- <div class="container-filtro">
+            <label for="modalidade">Modalidade</label>
+            <select id="modalidade">
+                <option value="todos">Todos</option>
+                <option value="venda">Venda</option>
+                <option value="aluguel">Aluguel</option>
+            </select>
+
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+                <option value="todas">Todas</option>
+                <option value="casa">Casa</option>
+                <option value="sobrado">Sobrado</option>
+                <option value="terreno">Terreno</option>
+                <option value="comercial">Comercial</option>
+                <option value="imovel-rual">Imóvel Rural</option>
+            </select>
+
+            <label for="localidade">Bairro</label>
+            <select id="localidade">
+                <option value="todos">Todos</option>
+                <option value="vila carli">Vila Carli</option>
+                <option value="vila bela">Vila Bela</option>
+                <option value="conradinho">Conradinho</option>
+                <option value="centro">Centro</option>
+            </select>
+
+            <button class="filtrar" onclick=filtrarImoveisPrincipal()>
+                Filtrar
+            </button>
+        </div> -->
+
+        <div class="todos-imoveis imoveis-busca">
+            <div class="container-imoveis">
+                <a href="./imovel-1.html">
+                    <div class="caixa-imovel filtro-imoveis">
+                        <img src="./src/imagens/casa-vn-1.png" alt="Casa">
+                        <h3 class="valor">R$ 120,000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Conradinho</p>
+
+
+                        <div class="container-infos">
+                            <div class="infos">
+
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">200m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">1 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiro</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="caixa-imovel filtro-imoveis">
+                        <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 120,000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Aluguel</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                        <div class="container-infos">
+                            <div class="infos">
+
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">200m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="caixa-imovel filtro-imoveis">
+                        <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 120,000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                        <div class="container-infos">
+                            <div class="infos">
+
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">200m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="caixa-imovel filtro-imoveis">
+                        <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 120,000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Aluguel</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                        <div class="container-infos">
+                            <div class="infos">
+
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">200m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="mensagem-resultado"></div>
+    </section>
+
 
     <div class="financiamento">
         <h2 class="titulo-financiameto">Deseja simular um financiamento?</h2>
