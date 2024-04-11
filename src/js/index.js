@@ -171,7 +171,7 @@ function filtrarImoveis() {
   }
 }
 
-//filtro index
+// //filtro index
 
 
 function filtrarImoveisPrincipal() {
@@ -213,6 +213,21 @@ function filtrarImoveisPrincipal() {
       imoveisBusca.style.backgroundColor = "red";
   }
 }
+
+//scroll
+function direcao(e) {
+  let direcao = document.getElementById("container-imoveis");
+
+  if (e == 1) {
+    direcao.scrollLeft = direcao.scrollLeft - 200;
+    console.log("clicado")
+  }else if (e == 2){
+    direcao.scrollLeft = direcao.scrollLeft + 200;
+    console.log("clicado")
+  }
+}
+
+console.log("clicado")
 
 
 

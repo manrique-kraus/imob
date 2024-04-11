@@ -152,6 +152,48 @@
     transform: rotate(180deg);
 }
 
+#botao-esquerda {
+    position: absolute;
+    padding: 0;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    background-color: #FFFFFF;
+    border: none;
+    top: 50%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#botao-esquerda img {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+    margin-right: 5px;
+}
+
+#botao-direita img {
+    width: 30px;
+    height: 30px;
+}
+
+#botao-direita {
+    position: absolute;
+    padding: 0;
+    right: 25px;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    top: 50%;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
 
 
@@ -177,5 +219,48 @@
     .container-filtro .filtrar,
     .pag-imoveis .container-filtro a {
         width: 100%;
+    }
+
+    #botao-esquerda {
+        position: absolute;
+        padding: 0;
+        left: 10px;
+        height: 30px;
+        width: 30px;
+        z-index: 1;
+        cursor: pointer;
+        user-select: none;
+        background-color: #FFFFFF;
+        border: none;
+        top: 50%;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #botao-esquerda img {
+        width: 20px;
+        height: 20px;
+        transform: rotate(180deg);
+        margin-right: 5px;
+    }
+    
+    #botao-direita img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #botao-direita {
+        position: absolute;
+        padding: 0;
+        right: 25px;
+        height: 30px;
+        width: 30px;
+        z-index: 1;
+        cursor: pointer;
+        user-select: none;
+        top: 50%;
+        border: none;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 }
