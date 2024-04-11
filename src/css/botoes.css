@@ -167,9 +167,7 @@
     }
     
     .botao-flutuante img {
-        margin-left: 30px;
-        width: 60px;
-        height: 65px;
+        display: none;
     }
 
     #botao-voltar, #botao-avancar {
