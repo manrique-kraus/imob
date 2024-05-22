@@ -229,6 +229,20 @@ function direcao(e) {
 
 console.log("clicado")
 
+   
+// Função para avançar as imagens
+function avancarImagem() {
+  const imagens = document.querySelectorAll('.container-imagens .slider');
+  const imagemAtual = document.querySelector('.container-imagens .on');
+  const proximaImagem = imagemAtual.nextElementSibling || imagens[0]; // Se não houver próxima imagem, volte para a primeira
+
+  imagens.forEach(imagem => imagem.classList.remove('on'));
+  proximaImagem.classList.add('on');
+}
+
+// Avançar automaticamente a cada 4 segundos
+setInterval(avancarImagem, 4000);
+
 
 
 
