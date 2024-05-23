@@ -232,7 +232,6 @@
         user-select: none;
         background-color: #FFFFFF;
         border: none;
-        top: 50%;
         border-radius: 50%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
@@ -257,7 +256,6 @@
         z-index: 1;
         cursor: pointer;
         user-select: none;
-        top: 50%;
         border: none;
         background-color: #FFFFFF;
         border-radius: 50%;

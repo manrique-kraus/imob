@@ -216,8 +216,18 @@
         height: 400px;
     }
 
-    .container-slider {
-        min-height: 1vh;
+    .imagens {
+        height: 320px;
+    }
+
+    .grade-imagens img, .todas-imagens img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .ultima-imagem p {
+        height: 150px;
+        bottom: 153px;
     }
 
     .caixa-imovel.produto {

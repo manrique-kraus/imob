@@ -350,11 +350,15 @@
 
     <section>
         <h2 class="titulo-imoveis">Principais imóveis</h2>
-
+        <button id="botao-esquerda" onclick="direcao(1)">
+            <img src="./src/imagens/arrow.png" alt="botao-esquerda">
+        </button>
+        <button id="botao-direita" onclick="direcao(2)">
+            <img src="./src/imagens/arrow.png" alt="botao-direita">
+        </button>
 
         <div class="container-imoveis" id="container-imoveis">
-            <button id="botao-esquerda" onclick=direcao(1)><img src="./src/imagens/arrow.png"
-                    alt="botao-esquerda"></button>
+
             <a href="./imovel-1.html">
                 <div class="caixa-imovel">
                     <img src="./src/imagens/casa-vn-1.png" alt="Casa">
@@ -714,10 +718,7 @@
                     </div>
                 </div>
             </a>
-            <button id="botao-direita" onclick=direcao(2)><img src="./src/imagens/arrow.png"
-                    alt="botao-direita"></button>
         </div>
-
 
         <div class="botao-ver-todos">
             <a href="./imoveis.html">
@@ -727,6 +728,8 @@
             </a>
         </div>
     </section>
+
+
 
     <div class="botao-flutuante">
         <a href="#">
