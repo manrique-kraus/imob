@@ -183,45 +183,23 @@ function direcao(e) {
 
   if (e == 1) {
     direcao.scrollLeft = direcao.scrollLeft - 200;
-    console.log("clicado")
   }else if (e == 2){
     direcao.scrollLeft = direcao.scrollLeft + 200;
-    console.log("clicado")
   }
 }
 
-console.log("clicado")
 
    
 // Função para avançar as imagens
 function avancarImagem() {
   const imagens = document.querySelectorAll('.container-imagens .slider');
   const imagemAtual = document.querySelector('.container-imagens .on');
-  const proximaImagem = imagemAtual.nextElementSibling || imagens[0]; // Se não houver próxima imagem, volte para a primeira
+  const proximaImagem = imagemAtual.nextElementSibling || imagens[0];
 
   imagens.forEach(imagem => imagem.classList.remove('on'));
   proximaImagem.classList.add('on');
 }
-
-// Avançar automaticamente a cada 4 segundos
 setInterval(avancarImagem, 4000);
-
-//mais fotos
-
-document.getElementById("mais-fotos").addEventListener("click", function(event) {
-  event.preventDefault(); 
-  document.querySelector('.imagens-todas').classList.toggle('esconder');
-  document.querySelector('.imagens').classList.toggle('esconder');
-});
-
-
-
-
-
-
-
-
-
 
 
 
