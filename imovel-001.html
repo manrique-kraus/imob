@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/botoes.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="icon" href="./src/imagens/favicon-imob.png" type="image/png">
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <title>Imovel 1</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a href="./index.html">
+                <img class="logo" src="./src/imagens/logo-yp.png" alt="Logo Imobiliária Your Place">
+            </a>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./imoveis.html" class="nav-link">Imóveis</a></li>
+                    <li class="nav-item"><a href="./contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="./trabalhe-conosco.html" class="nav-link">Junte-se a nós</a></li>
+                </ul>
+            </div>
+
+            <div class="icones">
+                <div class="icone-fechar-mobile">
+                    <a href="#" class="icone" onclick="aparecerMenu()">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                </div>
+
+                <div class="icone-menu-mobile">
+                    <a href="#" class="icone" onclick="aparecerMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu-mobile">
+            <ul>
+                <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./imoveis.html" class="nav-link">Imóveis</a></li>
+                <li class="nav-item"><a href="./contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="./trabalhe-conosco.html" class="nav-link">Junte-se a nós</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="imagens">
+        <div class="grade-imagens">
+            <img src="./src/imagens/001/001 (1).jpg" alt="">
+            <img src="./src/imagens/001/001 (2).jpg" alt="">
+            <img src="./src/imagens/001/001 (3).jpg" alt="">
+            <div class="ultima-imagem">
+                <img src="./src/imagens/001/001 (4).jpg" alt="">
+                <p><a id="mais-fotos" href="#">+ Fotos</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="imagens-todas esconder">
+        <div class="todas-imagens">
+            <img src="./src/imagens/001/001 (1).jpg" alt="">
+            <img src="./src/imagens/001/001 (2).jpg" alt="">
+            <img src="./src/imagens/001/001 (3).jpg" alt="">
+            <img src="./src/imagens/001/001 (4).jpg" alt="">
+            <img src="./src/imagens/001/001 (5).jpg" alt="">
+            <img src="./src/imagens/001/001 (6).jpg" alt="">
+        </div>
+    </div>
+
+    <h2 class="texto-informacoes">Informações do imóvel:</h2>
+    <div class="caixa-imovel produto">
+        <h3 class="valor">R$575.000,00</h3>
+        <h2 class="modalidade">Venda</h2>
+        <p class="categoria">Casa</p>
+        <p class="localidade"> <i class="fa-solid fa-location-dot"></i>Mirante da Serra</p>
+
+        <div class="area">
+            <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                Total
+            </p>
+            <p class="titulo-area">360m²</p>
+        </div>
+
+        <div class="area">
+            <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                Ùtil
+            </p>
+            <p class="titulo-area-util">144,21m²</p>
+        </div>
+
+        <div class="banheiros">
+            <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+            <p class="titulo-quarto">Banheiros</p>
+        </div>
+
+        <div class="quartos">
+            <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+            <p class="titulo-quarto">Quartos</p>
+        </div>
+
+        <div class="garagens">
+            <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+            <p class="titulo-quarto">Garagens</p>
+        </div>
+    </div>
+
+    <div class="container-infos-comprar">
+
+        <div class="descricao-mapa">
+            <div class="descricao">
+                <p>id:001</p>
+                <h2>Mirante da Serra</h2>
+                <div class="categoria-e-preco">
+                    <h2>Casa para Venda</h2>
+                    <h2>R$ Baixou o valor de: R$ 620.000,00 por: R$ 575.000,00!
+                    </h2>
+                </div>
+                <p>O imóvel contém:
+                    Sala de estar ampla, sala de jantar e cozinha em conceito aberto
+                    03 quartos (sendo 01 suíte com closet)
+                    Banheiro social
+                    02 vagas de garagem lado a lado cobertas (02 vagas descobertas)
+                    Espaço aos fundos com churrasqueira
+                    Lavanderia
+                    Espaço para futuras ampliações ou até mesmo uma piscina
+                    Imóvel financiável.
+
+                    Não perca esta oportunidade de morar no Mirante da Serra! Entre em contato conosco para agendar uma
+                    visita e conhecer essa incrível casa de alto padrão.
+                </p>
+            </div>
+
+            <div class="mapa">
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.034874992752!2d-51.484110989825794!3d-25.370147630431283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef37a84550c359%3A0x5d065bf312581e1!2sR.%20Edivino%20Lange%2C%20232%20-%20Conradinho%2C%20Guarapuava%20-%20PR%2C%2085045-265!5e0!3m2!1spt-BR!2sbr!4v1710873956200!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-comprar">
+            <div class="comprar">
+                <h2 class="titulo-comprar">Tenho interesse neste imóvel</h2>
+                <p class="texto-comprar">Nos envie uma mensagem e vamos te encaminhar para um dos nossos contadores!</p>
+                <div class="botoes-comprar">
+                    <a href="https://w.app/zY8CDa"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/vniciusdelima/"><i class="fa-brands fa-instagram"></i></a>
+                    <a
+                        href="mailto:yourplaceimob@gmail.com?subject=Im%C3%B3vel+x&body=tenho+interrese+neste+im%C3%B3vel:+https://testeteste.com"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h2 class="titulo-imoveis">Outros imóveis</h2>
+        <button id="botao-esquerda" onclick="direcao(1)">
+            <img src="./src/imagens/arrow.png" alt="botao-esquerda">
+        </button>
+        <button id="botao-direita" onclick="direcao(2)">
+            <img src="./src/imagens/arrow.png" alt="botao-direita">
+        </button>
+
+        <div class="container-imoveis" id="container-imoveis">
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/Alto da XV/1.jpg" alt="Casa">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Casa</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="caixa-imovel">
+                    <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
+                    <h3 class="valor">R$ 120,000,00</h3>
+                    <p class="categoria">Sobrado</p>
+                    <h2 class="modalidade">Venda</h2>
+                    <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
+
+
+                    <div class="container-infos">
+                        <div class="infos">
+
+                            <div class="area">
+                                <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></p>
+                                <p class="titulo-area">200m²</p>
+                            </div>
+
+                            <div class="banheiros">
+                                <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                <p class="titulo-quarto">Banheiros</p>
+                            </div>
+
+                            <div class="quartos">
+                                <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                <p class="titulo-quarto">Quartos</p>
+                            </div>
+
+                            <div class="garagens">
+                                <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                <p class="titulo-quarto">Garagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="botao-ver-todos">
+            <a href="./imoveis.html">
+                <button id="verTodos">
+                    Ver todos
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2 class="texto-footer">© 2024 Copyright Your Place Imobiliária Ltda | CRECI ------ | CNPJ 57.051.493/0001-06
+        </h2>
+        <nav class="nav-footer">
+            <a href="https://www.instagram.com/vniciusdelima/">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="https://w.app/zY8CDa">
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+            </a>
+            <a href="#">
+                <li><i class="fa-brands fa-facebook"></i></li>
+            </a>
+            <a
+                href="mailto:yourplaceimob@gmail.com?subject=Im%C3%B3vel+x&body=tenho+interrese+neste+im%C3%B3vel:+https://testeteste.com">
+                <li> &nbsp; yourplaceimob@gmail.com</li>
+            </a>
+        </nav>
+    </footer>
+
+    <div class="barra-mobile">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2f44bb86e9.js" crossorigin="anonymous"></script>
+    <script src="./src/js/index.js" defer></script>
+    <script src="./src/js/mais-fotos.js" defer></script>
+</body>
+
+</html>

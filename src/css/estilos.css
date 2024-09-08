@@ -207,7 +207,6 @@ header {
 
 .titulo-imoveis {
     font-size: 2.7rem;
-    margin-top: 60px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -234,6 +233,8 @@ header {
     cursor: pointer;
     margin-bottom: 10px;
 } */
+
+
 
 .container-imoveis .caixa-imovel .valor,
 .container-imoveis .caixa-imovel .modalidade,
@@ -314,13 +315,18 @@ header {
     margin-bottom: 30px;
 }
 
-.pag-imoveis.todos-imoveis {
+/* .pag-imoveis.todos-imoveis {
     flex-direction: row;
+} */
+
+.container-imoveis.todos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pag-imoveis .container-filtro {
     width: 15%;
-    height: 500px;
     padding: 5px;
     margin: auto 10px;
     display: flex;
@@ -338,6 +344,11 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: -10px;
+}
+
+.pag-imoveis .container-filtro .filtros {
+    display: flex;
+    justify-content: center;
 }
 
 .container-busca label {
@@ -504,7 +515,7 @@ header {
 
 .imagens {
     width: 100%;
-    height: 550px;
+    height: 650px;
     margin-top: 15px;
 }
 
@@ -513,8 +524,8 @@ header {
 }
 
 .grade-imagens img, .todas-imagens img {
-    width: 550px;
-    height: 260px;
+    width: 400px;
+    height: 320px;
 }
 
 .grade-imagens {
@@ -764,7 +775,7 @@ section {
 
     background-color: var(--cor-branca);
     width: 240px;
-    height: 430px;
+    height: 500px;
     transition: 0.4s ease-in-out;
     cursor: pointer;
     margin-bottom: 10px;
@@ -775,8 +786,10 @@ section {
 }
 
 .container-imoveis .caixa-imovel img {
-    width: 100%
+    width: 100%;
+    height: 250px;
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: -moz-crisp-edges; 
+    image-rendering: -o-crisp-edges; 
+    image-rendering: crisp-edges; 
 }
-
-
-

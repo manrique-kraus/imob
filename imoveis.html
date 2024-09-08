@@ -97,6 +97,7 @@
                         <option value="casa">Casa</option>
                         <option value="sobrado">Sobrado</option>
                         <option value="terreno">Terreno</option>
+                        <option value="apartamento">Apartamento</option>
                         <option value="comercial">Comercial</option>
                         <option value="imovel-rual">Imóvel Rural</option>
                     </select>
@@ -106,10 +107,18 @@
                     <label for="localidade">Bairro</label>
                     <select id="localidade">
                         <option value="todos">Todos</option>
-                        <option value="vila carli">Vila Carli</option>
-                        <option value="vila bela">Vila Bela</option>
-                        <option value="conradinho">Conradinho</option>
+                        <option value="mirante da serra">Mirante da Serra</option>
+                        <option value="alto da xv">Alto da XV</option>
+                        <option value="res. vista do valle">Res. Vista do Valle</option>
+                        <option value="morro alto">Morro Alto</option>
+                        <option value="boqueirão">Boqueirão</option>
                         <option value="centro">Centro</option>
+                        <option value="vila itália">Vila Itália</option>
+                        <option value="vila bela">Vila Bela</option>
+                        <option value="santa cruz">Santa Cruz</option>
+                        <option value="cidade dos lagos">Cidade dos Lagos</option>
+                        <option value="dos estados">dos Estados</option>
+                        <option value="são cristóvão">São Cristóvão</option>
                     </select>
                 </div>
 
@@ -117,10 +126,10 @@
                     <label for="valor">Preço</label>
                     <select id="valor">
                         <option value="todos">Todos</option>
-                        <option value="100">Até R$100.000,00 </option>
-                        <option value="150">Até R$150.000,00 </option>
                         <option value="200">Até R$200.000,00 </option>
-                        <option value="250">Até R$250.000,00 </option>
+                        <option value="500">Até R$500.000,00 </option>
+                        <option value="800">Até R$800.000,00 </option>
+                        <option value="900">Até R$900.000,00 </option>
                     </select>
                 </div>
             </div>
@@ -133,23 +142,346 @@
 
         <div class="todos-imoveis">
             <h2 class="titulo-imoveis">Todos imóveis</h2>
-            <div class="container-imoveis">
-                <a href="./imovel-1.html">
+            <div class="container-imoveis todos">
+                <a href="./imovel-01.html"> <!-- id: 01 -->
                     <div class="caixa-imovel">
-                        <img src="./src/imagens/casa-vn-1.png" alt="Casa">
-                        <h3 class="valor">R$ 120,000,00</h3>
+                        <p class="id-imovel">id: 001</p>
+                        <img src="./src/imagens/imoveis/001/001 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 575.000,00</h3>
                         <p class="categoria">Casa</p>
                         <h2 class="modalidade">Venda</h2>
-                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Conradinho</p>
-
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Mirante da Serra</p>
 
                         <div class="container-infos">
                             <div class="infos">
-
                                 <div class="area">
                                     <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                     </p>
-                                    <p class="titulo-area">200m²</p>
+                                    <p class="titulo-area">360m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-02.html"> <!-- id: 02 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 002</p>
+                        <img src="./src/imagens/imoveis/002/002 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 560.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Alto da XV</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">155m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-03.html"> <!-- id: 03 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 003</p>
+                        <img src="./src/imagens/imoveis/003/003 (1).jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 780.000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Res. Vista do Valle</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">146m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">4 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-04.html"> <!-- id: 04 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 004</p>
+                        <img src="./src/imagens/imoveis/004/004 (1).jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 785.000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Morro Alto</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">175m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">3 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-05.html"> <!-- id: 05 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 005</p>
+                        <img src="./src/imagens/imoveis/005/005 (1).jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 910.000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Boqueirão</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">126m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">4 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">4 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-06.html"> <!-- id: 06 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 006</p>
+                        <img src="./src/imagens/imoveis/006/006 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 1.199.000,00</h3>
+                        <p class="categoria">Apartamento duplex</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Centro</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">270m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">4 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">3 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-07.html"> <!-- id: 07 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 007</p>
+                        <img src="./src/imagens/imoveis/007/007 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 1.199.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Centro</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">278m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-08.html"> <!-- id: 08 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 008</p>
+                        <img src="./src/imagens/imoveis/008/008 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 430.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Itália</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">157,50m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-09.html"> <!-- id: 09 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 009</p>
+                        <img src="./src/imagens/imoveis/009/009 (1).jpg" alt="Sobrado">
+                        <h3 class="valor">R$ --</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Bela</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">132m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-banheiro">1 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-banheiro">Banheiro</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-garagem">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-garagem">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./imovel-10.html"> <!-- id: 10 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 010</p>
+                        <img src="./src/imagens/imoveis/010/010 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 330.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Santa Cruz</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">167,35m²</p>
                                 </div>
 
                                 <div class="banheiros">
@@ -171,36 +503,36 @@
                     </div>
                 </a>
 
-                <a href="">
-                    <div class="caixa-imovel">
-                        <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
-                        <h3 class="valor">R$ 120,000,00</h3>
-                        <p class="categoria">Sobrado</p>
-                        <h2 class="modalidade">Aluguel</h2>
-                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
 
+                <a href=""> <!-- id: 11 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 011</p>
+                        <img src="./src/imagens/imoveis/011/011 (1).jpg" alt="Terreno">
+                        <h3 class="valor">R$ 300.000,00</h3>
+                        <p class="categoria">Terreno</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Cidade dos Lagos</p>
 
                         <div class="container-infos">
                             <div class="infos">
-
                                 <div class="area">
                                     <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                     </p>
-                                    <p class="titulo-area">200m²</p>
+                                    <p class="titulo-area">227m²</p>
                                 </div>
 
                                 <div class="banheiros">
-                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
-                                    <p class="titulo-quarto">Banheiros</p>
+                                    <p class="icone-quarto">- <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiro</p>
                                 </div>
 
                                 <div class="quartos">
-                                    <p class="icone-quarto">1 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="icone-quarto">- <i class="fa-solid fa-bed"></i></p>
                                     <p class="titulo-quarto">Quartos</p>
                                 </div>
 
                                 <div class="garagens">
-                                    <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="icone-quarto">- <i class="fa-solid fa-car"></i></p>
                                     <p class="titulo-quarto">Garagem</p>
                                 </div>
                             </div>
@@ -208,22 +540,57 @@
                     </div>
                 </a>
 
-                <a href="">
+                <a href=""> <!-- id: 12 -->
                     <div class="caixa-imovel">
-                        <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
-                        <h3 class="valor">R$ 120,000,00</h3>
-                        <p class="categoria">Sobrado</p>
+                        <p class="id-imovel">id: 012</p>
+                        <img src="./src/imagens/imoveis/012/012 (1).jpg" alt="Terreno">
+                        <h3 class="valor">R$ 300.000,00</h3>
+                        <p class="categoria">Terreno</p>
                         <h2 class="modalidade">Venda</h2>
-                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
-
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Cidade dos Lagos</p>
 
                         <div class="container-infos">
                             <div class="infos">
-
                                 <div class="area">
                                     <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                     </p>
-                                    <p class="titulo-area">200m²</p>
+                                    <p class="titulo-area">227m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiro</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 13 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 013</p>
+                        <img src="./src/imagens/imoveis/013/013 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 370.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Cidade dos Lagos</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">73m²</p>
                                 </div>
 
                                 <div class="banheiros">
@@ -245,31 +612,30 @@
                     </div>
                 </a>
 
-                <a href="">
+                <a href=""> <!-- id: 14 -->
                     <div class="caixa-imovel">
-                        <img src="./src/imagens/sobrado-1.jpg" alt="Sobrado">
-                        <h3 class="valor">R$ 120,000,00</h3>
-                        <p class="categoria">Sobrado</p>
-                        <h2 class="modalidade">Aluguel</h2>
-                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vila Carli</p>
-
+                        <p class="id-imovel">id: 014</p>
+                        <img src="./src/imagens/imoveis/014/014 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 375.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Morro Alto</p>
 
                         <div class="container-infos">
                             <div class="infos">
-
                                 <div class="area">
                                     <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                                     </p>
-                                    <p class="titulo-area">200m²</p>
+                                    <p class="titulo-area">168m²</p>
                                 </div>
 
                                 <div class="banheiros">
-                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
-                                    <p class="titulo-quarto">Banheiros</p>
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiro</p>
                                 </div>
 
                                 <div class="quartos">
-                                    <p class="icone-quarto">4 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
                                     <p class="titulo-quarto">Quartos</p>
                                 </div>
 
@@ -281,6 +647,837 @@
                         </div>
                     </div>
                 </a>
+
+                <a href=""> <!-- id: 15 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 015</p>
+                        <img src="./src/imagens/imoveis/015/015 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 1.290.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Cidade dos Lagos</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">250m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 16 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 016</p>
+                        <img src="./src/imagens/imoveis/016/016 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 550.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Centro</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">110m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiro</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href=""> <!-- id: 17 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 017</p>
+                        <img src="./src/imagens/imoveis/017/017 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 398.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> dos Estados</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">160m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 18 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 018</p>
+                        <img src="./src/imagens/imoveis/018/018 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 2.900.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Condominio Piemonte</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">604m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">6 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 19 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 019</p>
+                        <img src="./src/imagens/imoveis/019/019 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 550.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Edifício Belvedere</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">110m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 20 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 020</p>
+                        <img src="./src/imagens/imoveis/020/020 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 2.300.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Centro</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">521m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">5 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 21 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 021</p>
+                        <img src="./src/imagens/imoveis/021/021 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 400.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Bairro das Cerejeiras</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">160m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 22 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 022</p>
+                        <img src="./src/imagens/imoveis/022/022 (1).jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 1.300.000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Alto da Santana</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">225m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 23 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 023</p>
+                        <img src="./src/imagens/imoveis/023/023 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 690.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Alto Santa Maria</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">225m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 24 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 024</p>
+                        <img src="./src/imagens/imoveis/024/024 (1).jpg" alt="Casa">
+                        <h3 class="valor">R$ 550.000,00</h3>
+                        <p class="categoria">Casa</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> João Gelinski</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">221m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 25 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 025</p>
+                        <img src="./src/imagens/imoveis/025/025 (1).jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 1.360.000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda e Locação</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Bonsucesso</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">355m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">5 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">5 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 26 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 026</p>
+                        <img src="./src/imagens/imoveis/026/026 (1).jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 750.000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vista do Valle</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">126m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 27 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 027</p>
+                        <img src="./src/imagens/imoveis/027/027 (1).jpg" alt="Sobrado">
+                        <h3 class="valor">R$ 859.000,00</h3>
+                        <p class="categoria">Sobrado</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> New Garden</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">128m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href=""> <!-- id: 28 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 028</p>
+                        <img src="./src/imagens/imoveis/028/028 (1).jpg" alt="Terreno">
+                        <h3 class="valor">R$ 300.000,00</h3>
+                        <p class="categoria">Terreno</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Santa Cruz</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">450m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 29 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 029</p>
+                        <img src="./src/imagens/imoveis/029/029 (1).jpg" alt="Terreno">
+                        <h3 class="valor">R$ Entre em contato</h3>
+                        <p class="categoria">Terreno</p>
+                        <h2 class="modalidade">Locação</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> São Cristóvão</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">3.600m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 30 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 030</p>
+                        <img src="./src/imagens/imoveis/030/030 (1).jpg" alt="Terreno">
+                        <h3 class="valor">R$ 300.000,00</h3>
+                        <p class="categoria">Terreno</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Bonsucesso</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">275m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">- <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 31 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 031</p>
+                        <img src="./src/imagens/imoveis/031/031 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 250.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Vitace Parque do Lago</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">69,06m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiro</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 32 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 032</p>
+                        <img src="./src/imagens/imoveis/032/032 (1).jpg" alt="Apartamento">
+                        <h3 class="valor" style="font-size: 15px;">R$418.000,00 a 775.500,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Residencial Ravenna</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area" style="font-size: 11px;">70 a 144m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 33 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 033</p>
+                        <img src="./src/imagens/imoveis/033/033 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 690.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Residencial Valência</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area" style="font-size: 1px;">113 a 220m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 34 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 034</p>
+                        <img src="./src/imagens/imoveis/034/034 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ Entre em contato</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Residencial Morada Nova</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">475,76m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">6 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">3 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 35 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 035</p>
+                        <img src="./src/imagens/imoveis/035/035 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 1.300.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Residencial Grand Trianon</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">236m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 36 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 036</p>
+                        <img src="./src/imagens/imoveis/036/036 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 1.250.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Residencial Petropolis</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">366m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">5 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiros</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">4 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagens</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href=""> <!-- id: 37 -->
+                    <div class="caixa-imovel">
+                        <p class="id-imovel">id: 037</p>
+                        <img src="./src/imagens/imoveis/037/037 (1).jpg" alt="Apartamento">
+                        <h3 class="valor">R$ 330.000,00</h3>
+                        <p class="categoria">Apartamento</p>
+                        <h2 class="modalidade">Venda</h2>
+                        <p class="localidade"> <i class="fa-solid fa-location-dot"></i> Edifício São Paulo</p>
+
+                        <div class="container-infos">
+                            <div class="infos">
+                                <div class="area">
+                                    <p class="icone-area"><i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                    </p>
+                                    <p class="titulo-area">90m²</p>
+                                </div>
+
+                                <div class="banheiros">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-shower"></i></p>
+                                    <p class="titulo-quarto">Banheiro</p>
+                                </div>
+
+                                <div class="quartos">
+                                    <p class="icone-quarto">2 <i class="fa-solid fa-bed"></i></p>
+                                    <p class="titulo-quarto">Quartos</p>
+                                </div>
+
+                                <div class="garagens">
+                                    <p class="icone-quarto">1 <i class="fa-solid fa-car"></i></p>
+                                    <p class="titulo-quarto">Garagem</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
             </div>
         </div>
         <div id="mensagem-resultado"></div>
