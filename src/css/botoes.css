@@ -135,7 +135,7 @@
     margin-left: 15px;
 }
 
-#botao-voltar, #botao-avancar {
+.botao-voltar, .botao-avancar {
     width: 30px;
     height: 30px;
     border: none;
@@ -143,16 +143,16 @@
     cursor: pointer;
 }
 
-#botao-voltar img, #botao-avancar img {
+.botao-voltar img, .botao-avancar img {
     width: 100%;
     height: 100%;
 }
 
-#botao-voltar {
+.botao-voltar {
     transform: rotate(180deg);
 }
 
-#botao-esquerda {
+.botao-esquerda {
     position: absolute;
     padding: 0;
     left: 10px;
@@ -167,19 +167,19 @@
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#botao-esquerda img {
+.botao-esquerda img {
     width: 30px;
     height: 30px;
     transform: rotate(180deg);
     margin-right: 5px;
 }
 
-#botao-direita img {
+.botao-direita img {
     width: 30px;
     height: 30px;
 }
 
-#botao-direita {
+.botao-direita {
     position: absolute;
     padding: 0;
     right: 25px;
@@ -212,7 +212,7 @@
         display: none;
     }
 
-    #botao-voltar, #botao-avancar {
+    .botao-voltar, .botao-avancar {
         height: 17px;
     }
 
@@ -221,7 +221,7 @@
         width: 100%;
     }
 
-    #botao-esquerda {
+    .botao-esquerda {
         position: absolute;
         padding: 0;
         left: 10px;
@@ -235,19 +235,19 @@
         border-radius: 50%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
-    #botao-esquerda img {
+    .botao-esquerda img {
         width: 20px;
         height: 20px;
         transform: rotate(180deg);
         margin-right: 5px;
     }
     
-    #botao-direita img {
+    .botao-direita img {
         width: 20px;
         height: 20px;
     }
     
-    #botao-direita {
+    .botao-direita {
         position: absolute;
         padding: 0;
         right: 25px;

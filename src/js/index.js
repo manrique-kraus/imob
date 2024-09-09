@@ -1,4 +1,3 @@
-
 window.sr = ScrollReveal({ reset: true });
 
 ScrollReveal().reveal('.container-busca, .banner-mobile, .container-slider', {
@@ -143,7 +142,6 @@ function filtrarImoveis() {
 
 // //filtro index
 
-
 function filtrarImoveisPrincipal() {
   let modalidade = document.getElementById("modalidade").value;
   let categoria = document.getElementById("categoria").value;
@@ -183,16 +181,27 @@ function filtrarImoveisPrincipal() {
   }
 }
 
-//scroll
-function direcao(e) {
-  let direcao = document.getElementById("container-imoveis");
+// //scroll
+// function direcao(e) {
+//   let direcao = document.getElementById("container-imoveis");
 
-  if (e == 1) {
-    direcao.scrollLeft = direcao.scrollLeft - 200;
-  }else if (e == 2){
-    direcao.scrollLeft = direcao.scrollLeft + 200;
+//   if (e == 1) {
+//     direcao.scrollLeft = direcao.scrollLeft - 200;
+//   }else if (e == 2){
+//     direcao.scrollLeft = direcao.scrollLeft + 200;
+//   }
+// }
+
+function direcao(botao, tipo) {
+  let container = document.querySelector(`.container-imoveis.${tipo}`);
+  
+  if (botao.classList.contains('botao-esquerda')) {
+    container.scrollLeft -= 200;
+  } else if (botao.classList.contains('botao-direita')) {
+    container.scrollLeft += 200;
   }
 }
+
 
 
    
